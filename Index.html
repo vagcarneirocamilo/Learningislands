@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu App de Aprendizagem</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English4fun 🌴</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bem-vindo ao meu app de aprendizagem!</h1>
-  <button onclick="startLearning()">Começar</button>
+  <header>
+    <h1>🌴 English4fun</h1>
+    <p class="subtitle">Aprenda inglês brincando!</p>
+  </header>
+
+  <main>
+    <section class="island">
+      <h2>🏝️ Ilha 1 — Saudações</h2>
+      <p>Aprenda a dizer “Hello”, “Good morning”, e “Goodbye”.</p>
+      <button onclick="startLesson('greetings')">Começar</button>
+    </section>
+
+    <section class="island">
+      <h2>🏝️ Ilha 2 — Números</h2>
+      <p>Aprenda os números de 1 a 10.</p>
+      <button onclick="startLesson('numbers')">Começar</button>
+    </section>
+
+    <section id="lesson-area" class="hidden"></section>
+  </main>
+
+  <footer>
+    <p>Feito com ❤️ por Vagner Camilo</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
